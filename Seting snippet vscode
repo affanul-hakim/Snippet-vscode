@@ -1,0 +1,44 @@
+User Snippet :
+=====================
+        
+Halaman Snippet html :
+=====================
+  
+	"PHP Tag": {
+				"prefix": "php",
+				"body": "<?php $1 ?>",
+				"description": "Tag Open PHP"
+			},
+
+			"Inline Echo": {
+				"prefix": "phpp",
+				"body": "<?= $$1; ?>"
+			},
+			"Inline Echo 2": {
+				"prefix": "phpo",
+				"body": "<?= $$1->$$2; ?>"
+			}
+
+
+====================
+Halaman Snippet PHP :
+====================
+
+	"This Load View CodeIgniter" : {
+		"prefix": "thisv",
+		"body": "\\$this->load->view('$1');$0"
+	},
+	"This Load Model CodeIgniter Model": {
+		"prefix": "thism",
+		"body": "\\$this->load->model('$1');$0"
+	},
+
+	"This Public Function CI": {
+		"prefix": "pub",
+		"body": "public function $1() {$2}"
+	},
+
+	"This Class Function CI": {
+		"prefix": "clasp",
+		"body": "class $1 extends CI_Controller {$2}"
+	}
